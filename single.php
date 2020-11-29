@@ -16,6 +16,10 @@
 						<?php $category = get_the_category(); ?>
 						<h3>Erschienen am <?php the_time('j. F Y'); ?> in <a href="<?php echo get_category_link($category[0]->term_id ) ?>"><?php echo $category[0]->cat_name; ?></a> <?php echo ( $brief_description != '' ? $brief_description : ''); ?></h3>
 						
+						<div class="entry">
+							<?php dpsg_content_edit(); ?>
+						</div>
+						
 						<div class="author-post" style="min-height: 112px;">
 							<?php $author_id = get_the_author_meta('ID');
 							$author_description = get_the_author_meta('description');
@@ -50,9 +54,7 @@
 							<?php endif; ?>
 							<div class="cl">&nbsp;</div>
 						</div><!-- /.author-post -->
-						<div class="entry">
-							<?php dpsg_content_edit(); ?>
-						</div>
+
 						<?php the_tags( '<div class="tags-post"><i class="icon icon-tags"></i> ', ' ', '</div>'); ?>
 						<?php if ( function_exists('socialshareprivacy') ) { socialshareprivacy(); } ?>
 						<section id="comments" class="comments">
