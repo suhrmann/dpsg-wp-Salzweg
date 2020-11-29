@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Startseite - Gilwell Express
+ * Template Name: Startseite mit Bild
  * Author: Simon Uhrmann, DPSG Salzweg
  * Description: Das Bild das angezeigt wird, ist das Beitragsbild, das auf die Breite skaliert wird.
  */
