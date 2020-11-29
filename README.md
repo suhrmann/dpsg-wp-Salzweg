@@ -1,6 +1,8 @@
 # Wordpress Theme der Pfadfinder Salzweg
 ### Basierend auf dem [Wordpress-Template der DPSG.de](https://dpsg.de/de/fuer-mitglieder/oeffentlichkeitsarbeit/vorlagen/vorlagen-online/wordpress.html)
 
+**Dokumentation** in [bitteLesen.pdf](bitteLesen.pdf)
+
 ![Screenshot der Pfadfinder Salzweg](screenshot.png)
 _Welcome page_ der [Pfadfinder Sophie Scholl Salzweg](https://www.pfadfinder-salzweg.de)
 
