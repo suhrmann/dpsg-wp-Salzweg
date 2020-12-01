@@ -12,14 +12,19 @@
 							<p><img src="<?php echo $img_obj[0]; ?>" alt="" class="featured-image" /></p>
 						<?php endif;
 
-						$brief_description = carbon_get_the_post_meta('dpsg_post_description'); ?>
-						<?php $category = get_the_category(); ?>
-						<h3>Erschienen am <?php the_time('j. F Y'); ?> in <a href="<?php echo get_category_link($category[0]->term_id ) ?>"><?php echo $category[0]->cat_name; ?></a> <?php echo ( $brief_description != '' ? $brief_description : ''); ?></h3>
-						
+                        $brief_description = carbon_get_the_post_meta('dpsg_post_description'); ?>
+                        <?php $category = get_the_category(); ?>
+                        <div class="article-release">
+                            Erschienen am <?php the_time('j. F Y'); ?> in
+                            <a href="<?php echo get_category_link($category[0]->term_id) ?>"><?php echo $category[0]->cat_name; ?></a>
+                            <?php echo($brief_description != '' ? $brief_description : ''); ?>
+                            <hr>
+                        </div>
+
 						<div class="entry">
 							<?php dpsg_content_edit(); ?>
 						</div>
-						
+
 						<div class="author-post" style="min-height: 112px;">
 							<?php $author_id = get_the_author_meta('ID');
 							$author_description = get_the_author_meta('description');

@@ -1,17 +1,23 @@
 /*
-Theme name: DPSG | Wordpress | 2.5 | Pfadfinder Salzweg (29.11.2020)
+Theme name: DPSG | Wordpress | 2.5.1 | Pfadfinder Salzweg (01.12.2020)
 Description: Wordpress Version des dpsg.de-Designs für Mitgliederinnen und Mitglieder/Stämme der DPSG
 Author: Deutsche Pfadfinderschaft Sankt Georg | Bundesamt Sankt Georg e.V.
 Author URI: http://dpsg.de/
-Version: 2.5
+Version: 2.5.1
 */
-
-/******* dpsgde WordPress CSS *******/
 
 /**
  * Custom styles
  * @author: Simon Uhrmann
  */
+
+/* style "Erschienen am ..." */
+.article-release, .article-release a, .article-release hr {
+	color: #003056; /* DPSG primary color @darkColor */
+	text-decoration: none;
+	border-top: 1px solid #eee;
+}
+
 .widget .widget-dpsg-logos {
 	border: 1px solid #e9ecef !important;
 	text-align: center;
@@ -24,13 +30,16 @@ Version: 2.5
 
 .event-container {
 	border: 1px solid #e9ecef !important;
-    padding: 7px;
+	padding: 7px;
 }
 .event-container:hover {
 	background-color: rgba(0,0,0, 0.05);
 }
 /* END: Custom styles */
 /* END: author Simon Uhrmann */
+
+
+/******* dpsg.de WordPress CSS *******/
 
 /* Common elements styling */
 .post .entry h1 { font-size: 20px; line-height: 30px; }
