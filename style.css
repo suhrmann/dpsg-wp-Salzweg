@@ -12,7 +12,7 @@ Version: 2.5.1
  */
 
 /* style "Erschienen am ..." */
-.article-release, .article-release a, .article-release hr {
+.article-release, .article-release > a, .article-release > hr {
 	color: #003056; /* DPSG primary color @darkColor */
 	text-decoration: none;
 	border-top: 1px solid #eee;
