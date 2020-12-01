@@ -16,9 +16,9 @@
                         <?php $category = get_the_category(); ?>
                         <div class="article-release">
                             Erschienen am <?php the_time('j. F Y'); ?> in
-                            <a href="<?php echo get_category_link($category[0]->term_id) ?>"><?php echo $category[0]->cat_name; ?></a>
+                            <a href="<?php echo get_category_link($category[0]->term_id) ?>" class="article-release"><?php echo $category[0]->cat_name; ?></a>
                             <?php echo($brief_description != '' ? $brief_description : ''); ?>
-                            <hr>
+                            <hr class="article-release">
                         </div>
 
 						<div class="entry">

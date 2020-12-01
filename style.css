@@ -12,11 +12,18 @@ Version: 2.5.1
  */
 
 /* style "Erschienen am ..." */
-.article-release, .article-release > a, .article-release > hr {
+.article-release, a.article-release {
 	color: #003056; /* DPSG primary color @darkColor */
+}
+
+a.article-release {
 	text-decoration: none;
+}
+
+hr.article-release {
 	border-top: 1px solid #eee;
 }
+
 
 .widget .widget-dpsg-logos {
 	border: 1px solid #e9ecef !important;
